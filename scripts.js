@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const pdfPath = "assets/example.pdf";
-  const pdfjsLib = window['pdfjs-dist/build/pdf'];
+  const pdfPath = "assets/example.pdf"; // Cambia por la ruta de tu PDF
+  const pdfjsLib = window['pdfjs-dist/build/pdf']; // PDF.js desde el CDN
 
-  pdfjsLib.GlobalWorkerOptions.workerSrc = 'libs/pdf.worker.js';
+  // Configurar la ubicación del worker
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
 
   const flipbook = $("#flipbook");
 
