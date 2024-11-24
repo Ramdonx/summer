@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const pdfjsLib = window['pdfjs-dist/build/pdf']; // PDF.js desde el CDN
 
   // Configurar la ubicación del worker
-  pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
+  pdfjsLib.GlobalWorkerOptions.workerSrc = 'libs/pdf.worker.mjs';
 
   const flipbook = $("#flipbook");
 
