@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Magazine</title>
+    <link href="https://fonts.cdnfonts.com/css/voga" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/header.css"> <!-- Your custom styles -->
+</head>
+<body onclick="PlayAudio()">
+    <header>
+        <div class="back">
+            <div class="menu container">
+                <a href="#" class="logo" >S U M M E R</a>
+                <input type="checkbox" id="menu" />
+                <label for="menu">
+                    <i class="fa-solid fa-bars"></i>
+                    <img src="images/menu.png" class="menu-icono" alt="">
+                </label>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="..index.html">Inicio</a></li>
+                        <li><a href="categories/publicaciones.html" class="active">Publicaciones</a></li>
+                        <li><a href="#">Sobre Nosotros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
+    <main>
+        <Div>
+            <p>Republica Dominicana</p>
+
+
+
+        </Div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 S U M M E R Magazine. All rights reserved.</p>
+    </footer>
+    <audio id="musica" controls>
+        <source src="..audio/2.mp3" type="audio/mp3">
+    </audio>
+
+    <script>
+        function PlayAudio() {
+            document.getElementById("musica").play();
+        }
+    </script>
+</body>
+</html>
