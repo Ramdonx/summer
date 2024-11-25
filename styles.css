@@ -1,32 +1,159 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  background: #2303b1;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/*header {
+/*  position: fixed;
+/*  left: 0;
+/*  background-color: #333;*/
+/*  color: white;*/
+/*  padding: 10px;*/
+/*  padding-left: 20px; /* Adjust padding as needed */
+/* text-align: left; */
+/*} */ 
+
+.back {
+  padding: 32px 0;
+  background-color: #f0efef;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  right: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  color: #C57B57;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.menu .navbar ul li {
+  position: relative;
+  float: left;
+}
+
+.menu .navbar ul li a {
+  font-size: 18px;
+  padding: 20px;
+  color: #000000;
+  display: block;
+}
+
+.menu .navbar ul li a:hover {
+  color: #C57B57;
+}
+
+.active {
+  border-bottom: 2px solid #000000; 
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+.menu label {
+  cursor: pointer;
+  display: none;
+}
+
+@media(max-width:500px) {
+
+  .menu {
+    padding: 30px;
+  }
+
+  .menu label {
+    display: initial;
+  }
+
+  .back {
+    padding: 50px;
+  }
+
+  .menu .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.397);
+    display: none;
+  }
+
+  .menu .navbar ul li {
+    width: 100%;
+  }
+
+  #menu:checked ~ .navbar {
+    display: initial;
+  }
+}
+
+body {
+  font-family: Voga, sans-serif;
+  margin: 0;
+  padding: 0;
   background-color: #f4f4f4;
+}
+
+main {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
+  height: calc(100vh - 100px); /* Adjust height to leave space for header and footer */
 }
 
-.flipbook-container {
-  width: 800px;
-  height: 600px;
-  background: #fff;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
-
-#flipbook {
-  width: 100%;
-  height: 100%;
+.book {
+  width: 900px; /* Adjust book width */
+  height: 600px; /* Adjust book height */
+  position: relative; /* Required for the page-turning effect */
 }
 
 .page {
+  background-color: white;
+  border: 1px solid #ddd; /* Optional border */
+  border-radius: 5px; /* Optional rounded corners */
+  overflow: hidden;
   position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+.page img {
   width: 100%;
   height: 100%;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block; /* Ensures no whitespace under images */
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
