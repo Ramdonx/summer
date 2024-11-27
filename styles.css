@@ -13,7 +13,7 @@
 }
 
 .page {
-    min-width: 80%; /* Cada página ocupa el 100% del contenedor */
+    min-width: 70%; /* Cada página ocupa el 100% del contenedor */
     transition: transform 0.5s ease; /* Suaviza la transición */
 }
 
