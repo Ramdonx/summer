@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Summer Magazine</title>
-    <link href="https://fonts.cdnfonts.com/css/voga" rel="stylesheet">
+    <title>Flipbook Tipo ISSUU</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="styles.css"> <!-- Your custom styles -->
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body onclick="PlayAudio()">
+<body>
     <header>
         <div class="back">
             <div class="menu container">
@@ -29,47 +28,31 @@
             </div>
         </div>
     </header>
-
-    <main>
-        <div class="flipbook">
-
-            <div class="page"><img src="images/cover.jpg" alt="cover.jpg"></div>
-            <div class="page"><img src="images/page1.jpg" alt="page_1.jpg"></div>
-            <div class="page"><img src="images/page2.jpg" alt="page_2.jpg"></div>
-            <div class="page"><img src="images/page3.jpg" alt="page_3.jpg"></div>
-            <div class="page"><img src="images/page4.jpg" alt="page_4.jpg"></div>
-            <div class="page"><img src="images/page5.jpg" alt="page_5.jpg"></div>
-            <div class="page"><img src="images/page6.jpg" alt="page_6.jpg"></div>
-            <div class="page"><img src="images/page7.jpg" alt="page_7.jpg"></div>
-            <div class="page"><img src="images/page8.jpg" alt="page_8.jpg"></div>
-            <div class="page"><img src="images/page9.jpg" alt="page_9.jpg"></div>
-            <div class="page"><img src="images/page10.jpg" alt="page_10.jpg"></div>
-            <!-- Agrega más imágenes según sea necesario -->
-        </div>
+    </header>
+    <div class="flipbook">
         
-        <!-- Botones de navegación -->
-        <div class="navigation">
-            <button id="prev">Anterior</button>
-            <button id="next">Siguiente</button>
-        </div>
-    </main>
-
+        <div class="page"><img src="images/cover.jpg" alt="cover.jpg"></div>
+        <div class="page"><img src="images/page1.jpg" alt="page_1.jpg"></div>
+        <div class="page"><img src="images/page2.jpg" alt="page_2.jpg"></div>
+        <div class="page"><img src="images/page3.jpg" alt="page_3.jpg"></div>
+        <div class="page"><img src="images/page4.jpg" alt="page_4.jpg"></div>
+        <div class="page"><img src="images/page5.jpg" alt="page_5.jpg"></div>
+        <div class="page"><img src="images/page6.jpg" alt="page_6.jpg"></div>
+        <div class="page"><img src="images/page7.jpg" alt="page_7.jpg"></div>
+        <div class="page"><img src="images/page8.jpg" alt="page_8.jpg"></div>
+        <div class="page"><img src="images/page9.jpg" alt="page_9.jpg"></div>
+        <div class="page"><img src="images/page10.jpg" alt="page_10.jpg"></div>
+        <!-- Agrega más páginas según sea necesario -->
+    </div>
+    <div class="navigation">
+        <button id="prev">Anterior</button>
+        <button id="next">Siguiente</button>
+    </div>
+    <script src="script.js"></script>
     <footer>
-        <p>&copy; 2024 S U M M E R Magazine. All rights reserved.</p>
-    </footer>
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script> -->
-    <!-- <script src="turn.js"></script> Link to local Turn.js -->
-    <script src="script.js"></script> <!-- Your custom script -->
-
-    <audio id="musica" controls>
-        <source src="audio/2.mp3" type="audio/mp3">
-    </audio>
-
-    <script>
-        function PlayAudio() {
-            document.getElementById("musica").play();
-        }
-    </script>
+        <p>©Copyright 2050 de nadie. Todos los derechos revertidos.</p>
+      </footer>
 </body>
 </html>
+
+    
