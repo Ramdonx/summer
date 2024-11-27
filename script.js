@@ -2,9 +2,9 @@ let currentPage = 0;
 const pages = document.querySelectorAll('.page');
 
 function showPage(index) {
-    pages.forEach((page, i) => {
-        page.style.transform = `translateX(${(i - index) * 100}%)`;
-    });
+    // Mueve el flipbook a la página correspondiente
+    const offset = -index * 100; // Desplazamiento en porcentaje
+    document.querySelector('.flipbook').style.transform = `translateX(${offset}vw)`;
 }
 
 document.getElementById('next').addEventListener('click', () => {
@@ -22,4 +22,4 @@ document.getElementById('prev').addEventListener('click', () => {
 });
 
 // Inicializa la primera página
-//showPage(currentPage);
+showPage(currentPage);
