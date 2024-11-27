@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body onclick="PlayAudio()">
     <header id="Header">
         <img src="images/logo.png" class="logo" alt="">
         <input type="checkbox" id="menu" />
@@ -16,9 +16,9 @@
         </label>
         <ul class="menu">
             <li class="item">Inicio</li>
-            <li class="item"><a href="categories/publicaciones.html">Publicaciones</a></li>
-            <li class="item"><a href="categories/about.html">Sobre Nosotros</a></li>
-            <li class="item"><a href="categories/contact.html">Contact</a></li>
+            <li><a href="categories/publicaciones.html">Publicaciones</a></li>
+            <li><a href="categories/about.html">Sobre Nosotros</a></li>
+            <li><a href="categories/contact.html">Contact</a></li>
         </ul>
     </header>
     <main>
@@ -43,8 +43,16 @@
     </main>
     <script src="script.js"></script>
     <footer class="footer">
+        <audio id="musica" loop>
+            <source src="audio/2.mp3" type="audio/mpeg">
+        </audio>
         <p>©Copyright 2024 S U M M E R. Todos los derechos reservados.</p>
     </footer>
+    <script>
+        function PlayAudio() {
+            document.getElementById("musica").play();
+        }
+    </script>
 </body>
 </html>
 
