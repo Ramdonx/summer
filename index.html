@@ -8,29 +8,21 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="back">
-            <div class="menu container">
-                <a href="#" class="logo">S U M M E R</a>
-                <input type="checkbox" id="menu" />
-                <label for="menu">
-                    <i class="fa-solid fa-bars"></i>
-                    <img src="images/menu.png" class="menu-icono" alt="">
-                </label>
-                <nav class="navbar">
-                    <ul>
-                        <li><a href="..index.html" class="active">Inicio</a></li>
-                        <li><a href="categories/publicaciones.html">Publicaciones</a></li>
-                        <li><a href="#">Sobre Nosotros</a></li>
-                        <li><a href="../Servidor/contact/index.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+    <header id="Header">
+        <img src="images/logo.png" class="logo" alt="">
+        <input type="checkbox" id="menu" />
+        <label for="menu">
+            <img src="images/menu.png" class="menu-icono" alt="">
+        </label>
+        <ul class="menu">
+            <li class="item">Inicio</li>
+            <li class="item"><a href="categories/publicaciones.html">Publicaciones</a></li>
+            <li class="item"><a href="categories/about.html">Sobre Nosotros</a></li>
+            <li class="item"><a href="categories/contact.html">Contact</a></li>
+        </ul>
     </header>
-    </header>
+    <main>
     <div class="flipbook">
-        
         <div class="page"><img src="images/cover.jpg" alt="cover.jpg"></div>
         <div class="page"><img src="images/page1.jpg" alt="page_1.jpg"></div>
         <div class="page"><img src="images/page2.jpg" alt="page_2.jpg"></div>
@@ -48,10 +40,11 @@
         <button id="prev">Anterior</button>
         <button id="next">Siguiente</button>
     </div>
+    </main>
     <script src="script.js"></script>
-    <footer>
-        <p>©Copyright 2050 de nadie. Todos los derechos revertidos.</p>
-      </footer>
+    <footer class="footer">
+        <p>©Copyright 2024 S U M M E R. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
 

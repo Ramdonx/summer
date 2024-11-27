@@ -2,24 +2,105 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
   font-family: Arial, sans-serif;
+  background-color: #E7E8EA;
   /*overflow: hidden; /* Evita el desplazamiento de la página */
 }
 
+#Header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  height: 60px;
+  background-color: #DEDCDD;
+  z-index: 10;
+}
+
+.logo {
+  height: 25px;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  margin: 0 15px;
+  font-size: 18px;
+  font-weight: 300;
+  cursor: pointer;
+  color: #3f3f3f;
+}
+
+.item:hover {
+  color: #BA7558;
+}
+
+#menu {
+  display: none;
+}
+
+.menu-icono {
+  width: 25px;
+}
+
+label {
+  cursor: pointer;
+  display: none;
+}
+
+@media(max-width:991px) {
+  .menu {
+    padding: 30px;
+    margin: 0;
+  }
+
+  label {
+    display: initial;
+  }
+
+  .menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #0707079d;
+    display: none;
+  }
+
+  .item {
+    margin: 0 0 20px 0;
+    width: 100%;
+  }
+
+  #menu:checked ~ .menu {
+    display: initial;
+  }
+}
 
 .flipbook {
   display: flex;
   transition: transform 0.5s ease;
   width: 100vw; /* Asegúrate de que ocupe todo el ancho de la ventana */
   height: 100vh; /* Asegúrate de que ocupe todo el alto de la ventana */
+  margin-top: 60px;
 }
 
 .page {
   min-width: 100vw; /* Cada página ocupa el 100% del ancho de la ventana */
-  height: 100vh; /* Cada página ocupa el 100% del alto de la ventana */
+  height: 89vh; /* Cada página ocupa el 100% del alto de la ventana */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +114,7 @@ body {
 
 .navigation {
   position: absolute;
-  bottom: 10px;
+  bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10; /* Asegúrate de que los botones estén por encima de las páginas */
@@ -43,4 +124,9 @@ button {
   padding: 10px 20px;
   margin: 0 5px;
   cursor: pointer;
+}
+
+footer {
+  padding: 1em 0;
+  text-align: center;
 }
