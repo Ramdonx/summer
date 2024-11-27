@@ -12,13 +12,13 @@ body {
     height: auto; /* Ajusta según sea necesario */
 }
 
-.navigation {
-    margin-top: 20px; /* Espacio entre el flipbook y los botones */
-}
-
 .page {
     min-width: 100%; /* Cada página ocupa el 100% del contenedor */
     transition: transform 0.5s ease; /* Suaviza la transición */
+}
+
+.navigation {
+    margin-top: 20px; /* Espacio entre el flipbook y los botones */
 }
 
 button {
