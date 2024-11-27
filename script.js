@@ -1,26 +1,40 @@
-$(document).ready(function() {
-    function adjustBookSize() {
-        // Obtener el ancho y alto de la ventana
-        var windowWidth = $(window).width();
-        var windowHeight = $(window).height();
+let currentPage = 0;
 
-        // Calcular el tamaño del libro
-        var bookWidth = windowWidth * 0.9; // 90% del ancho de la ventana
-        var bookHeight = windowHeight * 0.8; // 80% de la altura de la ventana
+const pages = document.querySelectorAll('.page');
 
-        // Aplicar el tamaño calculado al libro
-        $("#book").turn({
-            width: bookWidth,
-            height: bookHeight,
-            autoCenter: true
-        });
+
+function showPage(index) {
+
+    pages.forEach((page, i) => {
+
+        page.style.transform = `translateX(${(i - index) * 100}%)`;
+
+    });
+
+}
+
+
+document.getElementById('next').addEventListener('click', () => {
+
+    if (currentPage < pages.length - 1) {
+
+        currentPage++;
+
+        showPage(currentPage);
+
     }
 
-    // Ajustar el tamaño del libro al cargar la página
-    adjustBookSize();
+});
 
-    // Ajustar el tamaño del libro al redimensionar la ventana
-    $(window).resize(function() {
-        adjustBookSize();
-    });
+
+document.getElementById('prev').addEventListener('click', () => {
+
+    if (currentPage > 0) {
+
+        currentPage--;
+
+        showPage(currentPage);
+
+    }
+
 });
