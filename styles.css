@@ -1,35 +1,46 @@
-/*body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  /*overflow: hidden; /* Evita el desplazamiento de la página */
+}
+
 
 .flipbook {
-    display: flex;
-    overflow: hidden;
-    width: 60%; /* Ajusta según sea necesario */
-    height: auto; /* Ajusta según sea necesario */
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100vw; /* Asegúrate de que ocupe todo el ancho de la ventana */
+  height: 100vh; /* Asegúrate de que ocupe todo el alto de la ventana */
 }
 
 .page {
-    min-width: 70%; /* Cada página ocupa el 100% del contenedor */
-    transition: transform 0.5s ease; /* Suaviza la transición */
+  min-width: 100vw; /* Cada página ocupa el 100% del ancho de la ventana */
+  height: 100vh; /* Cada página ocupa el 100% del alto de la ventana */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ajusta la imagen sin distorsionarla */
 }
 
 .navigation {
-    margin-top: 20px; /* Espacio entre el flipbook y los botones */
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; /* Asegúrate de que los botones estén por encima de las páginas */
 }
 
 button {
-    padding: 10px 20px;
-    margin: 0 5px;
-    cursor: pointer;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
 }
-
-@media (max-width: 600px) {
-    .flipbook {
-        height: 300px; /* Ajusta la altura para pantallas pequeñas */
-    }
-}
-
