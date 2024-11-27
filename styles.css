@@ -73,7 +73,7 @@ label {
   display: none;
 }
 
-@media(max-width:800px) {
+@media(max-width:400px) {
   .menu {
     padding: 30px;
     margin: 0;
@@ -82,10 +82,6 @@ label {
   label {
     display: initial;
   }
-
-  .logo {
-  height: 15px;
-}
 
   .menu {
     position: absolute;
@@ -102,7 +98,7 @@ label {
   }
 
   #menu:checked ~ .menu {
-    display: initial;  
+    display: initial;
   }
 }
 
@@ -134,6 +130,7 @@ label {
   left: 50%;
   transform: translateX(-50%);
   z-index: 10; /* Asegúrate de que los botones estén por encima de las páginas */
+  display: flex;
 }
 
 button {
