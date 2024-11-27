@@ -73,7 +73,7 @@ label {
   display: none;
 }
 
-@media(max-width:991px) {
+@media(max-width:800px) {
   .menu {
     padding: 30px;
     margin: 0;
