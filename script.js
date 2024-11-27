@@ -22,4 +22,4 @@ document.getElementById('prev').addEventListener('click', () => {
 });
 
 // Inicializa la primera página
-showPage(currentPage);
+//showPage(currentPage);
