@@ -1,5 +1,4 @@
 let currentPage = 0;
-
 const pages = document.querySelectorAll('.page');
 
 function showPage(index) {
@@ -7,7 +6,6 @@ function showPage(index) {
         page.style.transform = `translateX(${(i - index) * 100}%)`;
     });
 }
-
 
 document.getElementById('next').addEventListener('click', () => {
     if (currentPage < pages.length - 1) {
