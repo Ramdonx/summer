@@ -83,6 +83,10 @@ label {
     display: initial;
   }
 
+  .logo {
+  height: 15px;
+}
+
   .menu {
     position: absolute;
     top: 100%;
@@ -98,7 +102,7 @@ label {
   }
 
   #menu:checked ~ .menu {
-    display: initial;
+    display: initial;  
   }
 }
 
