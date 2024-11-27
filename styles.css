@@ -18,3 +18,13 @@
     transition: transform 0.5s ease; /* Suaviza la transición */
 
 }
+
+@media (max-width: 600px) {
+
+    .flipbook {
+
+        height: 300px; /* Ajusta la altura para pantallas pequeñas */
+
+    }
+
+}
