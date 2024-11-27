@@ -95,7 +95,7 @@ footer {
 }
 
 /* Media Queries para pantallas pequeñas */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .menu {
         flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
         align-items: flex-start; /* Alinear a la izquierda */
